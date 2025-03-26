@@ -22,7 +22,7 @@ const Signup = () => {
     setLoader(true);
 
     try {
-      const response = await axios.post('http://localhost:3000/api/users/signup', formData);
+      const response = await axios.post('https://a2d-innovations-private-limited-1.onrender.com/api/users/signup', formData);
       setToast({ open: true, message: 'Signup Successful!', severity: 'success' });
       console.log('Signup Successful:', response.data);
     } catch (error) {
